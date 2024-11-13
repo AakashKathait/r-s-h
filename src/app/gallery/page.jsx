@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Image from "next/image";
-import Heading from "../components/Heading";
+import Heading from "../components/Heading/Index";
 
 const images = [];
 for (let i = 1; i <= 58; i++) {
@@ -48,7 +48,12 @@ const Gallery = () => {
             className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-60 flex justify-center items-center"
             onClick={closeModal} // Close modal when background is clicked
           >
-            <span className="absolute top-4 right-8 text-white text-2xl cursor-pointer" onClick={closeModal}>&times;</span>
+            <span
+              className="absolute top-4 right-8 text-white text-2xl cursor-pointer"
+              onClick={closeModal}
+            >
+              &times;
+            </span>
             <Image
               className="max-w-full max-h-full object-contain"
               src={selectedImage}

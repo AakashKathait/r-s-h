@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default () => {
+const index = () => {
   return (
     <div className="hero min-h-screen backgroundImage">
       <div className="hero-overlay bg-opacity-70"></div>
@@ -25,3 +25,5 @@ export default () => {
     </div>
   );
 };
+
+export default index;

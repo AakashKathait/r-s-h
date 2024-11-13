@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../components/Heading";
-import Carousel from "../components/Carousel";
+import Heading from "../components/Heading/Index";
+import Carousel from "../components/Carousel/Index";
 
 const page = () => {
   return (
@@ -44,9 +44,9 @@ const page = () => {
           Korean BBQ
         </h1>
         <p className="font-mont text-neutral-content leading-relaxed tracking-wide mb-4">
-          Gogigui literally "meat + roasting", or Korean barbecue refers to the
+          Gogigui literally means meat roast, or Korean barbecue refers to the
           Korean method of roasting beef, pork, chicken, or other types of meat.
-          Such dishes are often prepared at the diner's table on gas or charcoal
+          Such dishes are often prepared at the diner table on gas or charcoal
           grills that are built into the table itself. Some Korean restaurants
           that do not have built-in grills provide portable stoves for diners to
           use at their tables. The most representative form of gogigui is
