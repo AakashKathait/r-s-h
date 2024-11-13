@@ -13,7 +13,7 @@ const Find = () => {
   const phone = "(604) 739-9001";
   const address = "1215 West Broadway, Vancouver, BC, V6H 1G7";
   const position = { lat: 49.264, lng: -123.132 };
-  console.log(front);
+
 
   return (
     <div className="w-full min-h-screen relative flex justify-center text-neutral-content ">
