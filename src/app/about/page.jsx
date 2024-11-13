@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../components/Heading/Index.jsx";
-import Carousel from "../components/Carousel/Index.jsx";
+import Heading from "../components/Heading/index.jsx";
+import Carousel from "../components/Carousel/index.jsx";
 
 const page = () => {
   return (
