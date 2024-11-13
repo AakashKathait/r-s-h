@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Heading from "../components/Heading/index.jsx";
+import Heading from "../components/Heading/Heading.jsx";
 
 const images = [];
 for (let i = 1; i <= 58; i++) {

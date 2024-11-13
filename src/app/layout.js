@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navbar from "./components/Navbar/index.jsx";
-import Footer from "./components/Footer/index.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import { Montserrat, Barlow_Condensed, Zilla_Slab } from "next/font/google";
 
 

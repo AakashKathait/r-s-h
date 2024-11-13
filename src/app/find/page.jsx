@@ -6,7 +6,7 @@ import { IoMdCall } from "react-icons/io";
 import { TbClockHour3 } from "react-icons/tb";
 import front from "../assets/front.jpg";
 import Image from "next/image";
-import Heading from "../components/Heading/index.jsx";
+import Heading from "../components/Heading/Heading.jsx";
 
 const page = () => {
   const email = "royalseoulhouse@gmail.com";
