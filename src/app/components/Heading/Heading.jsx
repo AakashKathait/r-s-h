@@ -3,7 +3,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 
-const index = ({ heading }) => {
+const Heading = ({ heading }) => {
   return (
     <>
       <div className="flex justify-between">
@@ -30,4 +30,4 @@ const index = ({ heading }) => {
   );
 };
 
-export default index;
+export default Heading;

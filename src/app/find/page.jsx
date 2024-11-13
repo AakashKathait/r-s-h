@@ -8,7 +8,7 @@ import front from "../assets/front.jpg";
 import Image from "next/image";
 import Heading from "../components/Heading/Heading.jsx";
 
-const page = () => {
+const Find = () => {
   const email = "royalseoulhouse@gmail.com";
   const phone = "(604) 739-9001";
   const address = "1215 West Broadway, Vancouver, BC, V6H 1G7";
@@ -93,4 +93,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Find;

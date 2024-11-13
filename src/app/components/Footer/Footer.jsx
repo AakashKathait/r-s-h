@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import logo from "../../assets/RSH-logo.GIF";
 import Image from "next/image";
 
-const index = () => {
+const Footer = () => {
   const currentPage = usePathname();
   if (currentPage === "/") {
     return null; // Return null if not on the homepage
@@ -23,4 +23,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Footer;

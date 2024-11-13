@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../components/Heading/Heading.jsx";
 import Carousel from "../components/Carousel/Carousel.jsx";
 
-const page = () => {
+const About = () => {
   return (
     <div className="flex justify-center">
       <div className="container mb-8 about">
@@ -65,4 +65,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
