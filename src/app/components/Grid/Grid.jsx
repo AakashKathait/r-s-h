@@ -2,18 +2,41 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const Modal = () => {
+const Grid = () => {
   // State to track the selected image
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Click handler for images
+  const handleClick = (src) => {
+    setSelectedImage(src);
+    setIsModalOpen(true);
+  };
 
   // Close handler for the modal
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedImage(null);
   };
+
+  const images = [];
+  for (let i = 1; i <= 58; i++) {
+    images.push(require(`../assets/PICS/image (${i}).jpg`));
+  }
   return (
     <>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        {images.map((image, index) => (
+          <div key={index} className="p-2">
+            <Image
+              className="h-auto max-w-full rounded-lg object-cover object-center cursor-pointer"
+              src={image.default}
+              alt={`image-${index}`}
+              onClick={() => handleClick(image.default)}
+            />
+          </div>
+        ))}
+      </div>
       {/* Modal */}
       {isModalOpen && (
         <div
@@ -38,4 +61,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default Grid;
