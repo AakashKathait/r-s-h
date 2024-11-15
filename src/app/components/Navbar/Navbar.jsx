@@ -37,6 +37,21 @@ function Navbar() {
     };
   }, [setShowNav]);
 
+  useEffect(() => {
+    if (toggleNavbar) {
+      // Disable scrolling
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable scrolling
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup in case the component unmounts while navbar is open
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [toggleNavbar]); // Run this effect whenever toggleNavbar changes
+
   return (
     <div className={showNav ? "navbar-container" : "hide navbar-container"}>
       <div className="navbaar font-barlow">

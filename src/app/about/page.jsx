@@ -65,4 +65,10 @@ const About = () => {
   );
 };
 
+export const metadata = {
+  title: "About Us - Royal Seoul House",
+  description:
+    "Learn more about Royal Seoul House, the authentic Korean BBQ restaurant in Vancouver, and our commitment to great food and service.",
+};
+
 export default About;

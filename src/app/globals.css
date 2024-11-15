@@ -4,6 +4,7 @@
 
 .backgroundImage {
   background-image: url("./assets//hero.jpg");
+  height: 100vh;
 }
 
 .container {

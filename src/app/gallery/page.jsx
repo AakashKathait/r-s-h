@@ -67,4 +67,9 @@ const Gallery = () => {
   );
 };
 
+export const metadata = {
+  title: "Gallery - Royal Seoul House",
+  description:
+    "Discover our vibrant gallery of authentic Korean BBQ dishes and dining experiences at Royal Seoul House in Vancouver.",
+};
 export default Gallery;

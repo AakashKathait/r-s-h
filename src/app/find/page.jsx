@@ -14,7 +14,6 @@ const Find = () => {
   const address = "1215 West Broadway, Vancouver, BC, V6H 1G7";
   const position = { lat: 49.264, lng: -123.132 };
 
-
   return (
     <div className="w-full min-h-screen relative flex justify-center text-neutral-content ">
       <div className="container pt-5 pb-8 ">
@@ -91,6 +90,11 @@ const Find = () => {
       </div>
     </div>
   );
+};
+export const metadata = {
+  title: "Contact Us - Royal Seoul House",
+  description:
+    "Get in touch with Royal Seoul House for reservations, inquiries, or catering. Visit us at 1215 West Broadway, Vancouver.",
 };
 
 export default Find;
