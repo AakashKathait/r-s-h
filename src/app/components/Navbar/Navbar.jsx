@@ -10,6 +10,7 @@ function Navbar() {
   const currentPage = usePathname();
 
   const [toggleNavbar, setToggleNavbar] = useState(false);
+  const [toggleScroll, setToggleScroll] = useState(false);
   const [showNav, setShowNav] = useState(true);
   useEffect(() => {
     // Ensure the code only runs in the browser
@@ -38,7 +39,7 @@ function Navbar() {
   }, [setShowNav]);
 
   useEffect(() => {
-    if (toggleNavbar) {
+    if (toggleScroll) {
       // Disable scrolling
       document.body.style.overflow = "hidden";
     } else {
@@ -50,7 +51,7 @@ function Navbar() {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [toggleNavbar]); // Run this effect whenever toggleNavbar changes
+  }, [toggleScroll]); // Run this effect whenever toggleNavbar changes
 
   return (
     <div className={showNav ? "navbar-container" : "hide navbar-container"}>
@@ -59,6 +60,7 @@ function Navbar() {
           className={toggleNavbar ? "hamburger toggler" : "hamburger"}
           onClick={() => {
             setToggleNavbar((oldState) => !oldState);
+            setToggleScroll((oldState) => !oldState);
           }}
         >
           <div className="line first-line"></div>
