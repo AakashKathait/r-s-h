@@ -65,7 +65,7 @@ function Navbar() {
           <div className="line second-line"></div>
         </div>
         <Link className="logo-container" href="/">
-          <Image className="logo" src={logo} />
+          <Image className="logo" alt="Logo" src={logo} />
           <h1 className="logo-head">Royal Seoul House</h1>
         </Link>
         <div className="links">
