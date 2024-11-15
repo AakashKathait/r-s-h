@@ -1,7 +1,7 @@
 "use client";
 import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 
-const Map = () => {
+const Coords = () => {
   const position = { lat: 49.264, lng: -123.132 };
 
   return (
@@ -22,4 +22,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default Coords;

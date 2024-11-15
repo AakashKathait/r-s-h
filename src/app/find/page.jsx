@@ -5,7 +5,7 @@ import { TbClockHour3 } from "react-icons/tb";
 import front from "../assets/front.jpg";
 import Image from "next/image";
 import Heading from "../components/Heading/Heading.jsx";
-import Map from "../components/Map/Map.jsx";
+import Coords from "../components/Coords/Coords.jsx";
 
 const Find = () => {
   const email = "royalseoulhouse@gmail.com";
@@ -70,7 +70,7 @@ const Find = () => {
         </div>
         <hr className="my-12" />
         <div className="map-container">
-          <Map />
+          <Coords />
         </div>
       </div>
     </div>
