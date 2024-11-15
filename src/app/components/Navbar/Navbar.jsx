@@ -75,13 +75,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${1 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${1 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={currentPage === "/" ? "active" : "nav-link"}
                 href="/"
@@ -92,13 +93,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${2 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${2 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={
                   currentPage === "/reservation" ? "active" : "nav-link"
@@ -111,13 +113,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${3 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${3 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={currentPage === "/OO" ? "active" : "nav-link"}
                 href="https://www.bestfoodtodayorder.com/ordering/restaurant/menu?restaurant_uid=bd2bd132-e79b-404f-ae3d-25f87d1505e6"
@@ -128,13 +131,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${4 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${4 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={currentPage === "/gallery" ? "active" : "nav-link"}
                 href="/gallery"
@@ -145,13 +149,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${5 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${5 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={currentPage === "/about" ? "active" : "nav-link"}
                 href="/about"
@@ -162,13 +167,14 @@ function Navbar() {
             <li
               style={{
                 animation: toggleNavbar
-                  ? `navLink-fade 0.5s ease forwards ${6 / 7 + 0.2}s`
+                  ? `navLink-fade 0.5s ease forwards ${6 / 7 + 0.1}s`
                   : "",
               }}
             >
               <Link
                 onClick={() => {
                   setToggleNavbar((oldState) => !oldState);
+                  setToggleScroll(false);
                 }}
                 className={currentPage === "/find" ? "active" : "nav-link"}
                 href="/find"
