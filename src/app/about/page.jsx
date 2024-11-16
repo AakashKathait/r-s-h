@@ -9,10 +9,10 @@ const About = () => {
         <Heading heading="About Us"></Heading>
         <Carousel />
         <h1 className=" font-barlow mb-4 heading-size text-base-content">
-          Welcome to Royal Seoul
+          Welcome to Royal Seoul House
         </h1>
         <p className="font-mont text-neutral-content leading-relaxed tracking-wide">
-          House Ever Since it was founded in 1990, Royal Seoul House Korean BBQ
+          Ever Since it was founded in 1990, Royal Seoul House Korean BBQ
           Restaurant has maintained its original quality of Korean cuisine for
           over 30 years Royal Seoul House Korean BBQ Restaurant has been a place
           where our customers have enjoyed the traditional tastes & styles of
