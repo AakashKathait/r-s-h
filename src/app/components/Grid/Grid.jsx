@@ -20,7 +20,7 @@ const Grid = () => {
   };
 
   const images = [];
-  for (let i = 1; i <= 42; i++) {
+  for (let i = 1; i <= 37; i++) {
     images.push(require(`../../assets/PICS/image (${i}).jpg`));
   }
   return (
