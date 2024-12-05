@@ -55,9 +55,12 @@ const Find = () => {
             </div>
             <div className="flex">
               <TbClockHour3 size={25} className="mr-2" />
-              11:30am - 3:30pm <br /> 4:30pm - 10:30pm <br /> (Open 7 days a
-              week)
-              <br /> Last call at 9:30pm
+              Monday: 11:30 am –10 pm <br /> Tuesday: 11:30 am –10  pm <br />
+              Wednesday: 11:30 am –10 pm <br /> Thursday: 11:30 am –10 pm
+              <br /> Friday: 11:30 am –12 am
+              <br /> Saturday: 11:30 am –12 am <br /> Sunday: 11:30 am –12 am
+              <br /> <br /> *Closed for lunch <br />
+              from 3:30 pm to 4:30 pm*
             </div>
           </div>
           <div className="front-img">
