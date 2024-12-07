@@ -58,7 +58,7 @@ const Find = () => {
               Monday: 11:30 am –10 pm <br /> Tuesday: 11:30 am –10  pm <br />
               Wednesday: 11:30 am –10 pm <br /> Thursday: 11:30 am –10 pm
               <br /> Friday: 11:30 am –12 am
-              <br /> Saturday: 11:30 am –12 am <br /> Sunday: 11:30 am –12 am
+              <br /> Saturday: 11:30 am –12 am <br /> Sunday: 11:30 am –10 pm
               <br /> <br /> *Closed for lunch <br />
               from 3:30 pm to 4:30 pm*
             </div>
