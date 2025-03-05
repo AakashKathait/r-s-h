@@ -20,12 +20,28 @@ const Grid = () => {
   };
 
   const images = [];
-  for (let i = 49; i >= 1; i--) {
+  const imagesMenu = [];
+  for (let i = 1; i <= 36; i++) {
     images.push(require(`../../assets/PICS/image (${i}).jpg`));
+  }
+  for (let i = 37; i <= 49; i++) {
+    imagesMenu.push(require(`../../assets/PICS/image (${i}).jpg`));
   }
   return (
     <>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        {imagesMenu.map((image, index) => (
+          <div key={index} className="p-2">
+            <Image
+              className="h-auto max-w-full rounded-lg object-cover object-center cursor-pointer"
+              src={image.default}
+              alt={`image-${index}`}
+              onClick={() => handleClick(image.default)}
+            />
+          </div>
+        ))}
+        <br />
+        <br />
         {images.map((image, index) => (
           <div key={index} className="p-2">
             <Image
