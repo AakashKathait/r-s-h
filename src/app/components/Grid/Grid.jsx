@@ -29,25 +29,11 @@ const Grid = () => {
   }
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-5 ">
         {imagesMenu.map((image, index) => (
-          <div key={index} className="p-2">
+          <div key={index} className="p-2 relative">
             <Image
-              className="h-auto max-w-full rounded-lg object-cover object-center cursor-pointer"
-              src={image.default}
-              alt={`image-${index}`}
-              onClick={() => handleClick(image.default)}
-            />
-          </div>
-        ))}
-        <br />
-        <br />
-        <br />
-        <br />
-        {images.map((image, index) => (
-          <div key={index} className="p-2">
-            <Image
-              className="h-auto max-w-full rounded-lg object-cover object-center cursor-pointer"
+              className="w-full h-auto object-cover rounded-lg "
               src={image.default}
               alt={`image-${index}`}
               onClick={() => handleClick(image.default)}
@@ -55,6 +41,19 @@ const Grid = () => {
           </div>
         ))}
       </div>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+        {images.map((image, index) => (
+          <div key={index} className="p-2 relative">
+            <Image
+              className="w-full h-auto object-cover rounded-lg"
+              src={image.default}
+              alt={`image-${index}`}
+              onClick={() => handleClick(image.default)}
+            />
+          </div>
+        ))}
+      </div>
+
       {/* Modal */}
       {isModalOpen && (
         <div
