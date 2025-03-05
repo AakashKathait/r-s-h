@@ -42,6 +42,8 @@ const Grid = () => {
         ))}
         <br />
         <br />
+        <br />
+        <br />
         {images.map((image, index) => (
           <div key={index} className="p-2">
             <Image
